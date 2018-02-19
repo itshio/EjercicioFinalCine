@@ -15,9 +15,10 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button3"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="25dp"
+            android:layout_centerInParent="false"
+            android:layout_marginTop="183dp"
             android:onClick="click_nuevaserie"
             android:text="@string/nueva_serie" />
 
@@ -25,9 +26,9 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/button4"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="218dp"
+            android:layout_marginTop="28dp"
             android:onClick="click_verserie"
             android:text="@string/ver_serie" />
     </RelativeLayout>
