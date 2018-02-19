@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjercicioFinalCine</string>
+    <string name="nueva_serie">NUEVA SERIE</string>
+    <string name="ver_serie">VER SERIE</string>
+</resources>
