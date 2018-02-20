@@ -27,12 +27,12 @@
                     android:text="@string/nombre" />
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/formu_et_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:hint="" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                             android:text="@string/temporadas" />
 
                         <EditText
-                            android:id="@+id/editText3"
+                            android:id="@+id/formu_et_temporadas"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -70,7 +70,7 @@
                             android:text="@string/episodios" />
 
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/formu_et_episodios"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
@@ -87,10 +87,10 @@
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/genero" />
+                        android:text="@string/año" />
 
                     <EditText
-                        android:id="@+id/editText4"
+                        android:id="@+id/formu_et_año"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -99,7 +99,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="130dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -114,7 +114,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/radioButton3"
@@ -136,14 +136,6 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/humor" />
-                    </RadioGroup>
-
-                    <RadioGroup
-                        android:id="@+id/formu_rg_inferior"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
 
                         <RadioButton
                             android:id="@+id/radioButton4"
@@ -153,18 +145,18 @@
                             android:text="@string/amor" />
 
                         <RadioButton
-                            android:id="@+id/radioButton5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="@string/familiar" />
-
-                        <RadioButton
                             android:id="@+id/radioButton6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:text="@string/aventura" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/familiar" />
                     </RadioGroup>
 
                 </LinearLayout>
@@ -181,7 +173,7 @@
                         android:text="@string/sinopsis" />
 
                     <EditText
-                        android:id="@+id/editText5"
+                        android:id="@+id/formu_et_sinopsis"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -197,6 +189,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
+            android:onClick="Guardar"
             android:text="guardar" />
 
         <Button
@@ -204,6 +197,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
+            android:onClick="borrar"
             android:layout_alignParentLeft="true"
             android:text="@string/borrar" />
     </RelativeLayout>
