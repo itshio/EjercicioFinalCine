@@ -8,4 +8,17 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name= "estilo_letra">
+
+        <item name= "android:textSize">@dimen/d20</item>
+        <item name= "android:textColor">@color/Black</item>
+
+    </style>
+
+    <style name= "padding">
+
+        <item name="android:padding">@dimen/d10</item>
+
+    </style>
+
 </resources>

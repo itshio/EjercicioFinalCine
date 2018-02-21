@@ -24,6 +24,7 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    style="@style/estilo_letra"
                     android:text="@string/nombre" />
 
                 <EditText
@@ -48,6 +49,7 @@
                             android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            style="@style/estilo_letra"
                             android:text="@string/temporadas" />
 
                         <EditText
@@ -67,6 +69,7 @@
                             android:id="@+id/textView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            style="@style/estilo_letra"
                             android:text="@string/episodios" />
 
                         <EditText
@@ -87,11 +90,12 @@
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/estilo_letra"
                         android:text="@string/año" />
 
                     <EditText
                         android:id="@+id/formu_et_año"
-                        android:layout_width="match_parent"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="number" />
@@ -99,63 +103,58 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_marginBottom="@dimen/d15"
+                        style="@style/estilo_letra"
+
                         android:text="@string/genero" />
 
                     <RadioGroup
                         android:id="@+id/formu_rg_superior"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <RadioButton
                             android:id="@+id/radioButton3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/accion" />
 
                         <RadioButton
                             android:id="@+id/radioButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/terror" />
 
                         <RadioButton
                             android:id="@+id/radioButton2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/humor" />
 
                         <RadioButton
                             android:id="@+id/radioButton4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/amor" />
 
                         <RadioButton
                             android:id="@+id/radioButton6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/aventura" />
 
                         <RadioButton
                             android:id="@+id/radioButton5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:text="@string/familiar" />
                     </RadioGroup>
 
@@ -170,6 +169,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        style="@style/estilo_letra"
                         android:text="@string/sinopsis" />
 
                     <EditText

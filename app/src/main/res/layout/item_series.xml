@@ -10,42 +10,53 @@
 
         <ImageView
             android:id="@+id/item_imagen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/d25"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/item_nombre"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             app:srcCompat="@mipmap/ic_launcher" />
 
         <TextView
             android:id="@+id/item_nombre"
+            style="@style/estilo_letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_genero"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
-            android:layout_toLeftOf="@+id/item_año"
-            android:layout_toStartOf="@+id/item_año"
-            android:text="TextView" />
+            android:layout_alignStart="@+id/item_genero"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/item_genero"
+            style="@style/estilo_letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/item_imagen"
-            android:layout_toLeftOf="@+id/item_nombre"
-            android:layout_toStartOf="@+id/item_nombre"
+            android:layout_marginLeft="@dimen/d40"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="@dimen/d35"
+            android:layout_toEndOf="@+id/item_imagen"
+            android:layout_toRightOf="@+id/item_imagen"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/item_año"
+            style="@style/estilo_letra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_genero"
+            android:layout_alignBottom="@+id/item_genero"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/item_imagen"
-            android:layout_marginEnd="47dp"
-            android:layout_marginRight="47dp"
+            android:layout_marginBottom="@dimen/d35"
+            android:layout_marginEnd="46dp"
+            android:layout_marginRight="46dp"
             android:text="TextView" />
     </RelativeLayout>
 </LinearLayout>
